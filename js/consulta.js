@@ -9,7 +9,12 @@ if (buscador) {
             const contenidoFila = fila.textContent.toLowerCase();
         
             // Comprobar si contenidoFila incluye textoBusqueda
-            
+            if (contenidoFila.includes(textoBusqueda)) {
+                fila.style.display = ""; // Muestra la fila
+            }
+            else {
+                fila.style.display = "none"; // Oculta la fila
+            }    
         
         });
         
