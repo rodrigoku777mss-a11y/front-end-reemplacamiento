@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplacamiento Vehicular</title>
+    <!-- OBJETIVO DEL FRAMEWORK: Bootstrap nos provee grillas, tarjetas (cards) y sombras listas para usar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Biblioteca SweetAlert2 para alertas animadas e interactivas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/validaciones.js" defer></script>
+</head>
+
+<body>
+
+    <header class="encabezado-sitio">
+
+        <nav class="menu-navegacion">
+            <div class="contenedor-nav">
+                <span id="fecha-actual" class="texto-fecha"></span>
+                <a href="index.html" class="logo-sitio">Reemplacamiento Yucatán 2026</a>
+                <ul class="lista-navegacion">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tramites.html">Trámites y Citas</a></li>
+                    <li><a href="consulta.html">Consulta de Placas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+      
+        <div class="card tarjeta-interactiva shadow-sm p-4 mx-auto" style="max-width: 600px;">
+
+            <h2 class="fw-bold mb-3" style="color: var(--guinda);">Registro de Trámite Vehicular</h2>
+            <form id="form-tramite" novalidate>
+                <div class="mb-3">
+                    <label for="propietario" class="form-label fw-semibold">Nombre completo del propietario:</label>
+                    <input type="text" id="propietario" class="form-control" placeholder="Nombre/s - Apellido Paterno - Apellido Materno">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="placa" class="form-label fw-semibold">Placa Actual (Máx. 7 caracteres):</label>
+                        <input type="text" id="placa" class="form-control" placeholder="Ej. YZA123A">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="serie" class="form-label fw-semibold">Número de Serie / VIN</label>
+                    <input type="text" id="serie" class="form-control" placeholder="10 caracteres">
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo" class="form-label fw-semibold">Correo Electrónico:</label>
+                    <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com">
+                </div>
+                
+                <div class="d-flex gap-2 mt-3">
+                    <button type="submit" class="btn btn-guinda w-50 py-2">Validar y Agendar Cita</button>
+                    <button type="reset" class="btn btn-guinda w-50 py-2">Borrar Datos</button>
+                </div>
+            </form>
+
+        </div>
+        
+    </main>
+
+    <footer class="pie-pagina text-center">
+       <p class="mb-0">&copy; 2026 <a href="https://www.yucatan.gob.mx">Gobierno del Estado de Yucatán</a> - Portal de Reemplacamiento Vehicular</p>
+    </footer>
+
+</body>
+</html>

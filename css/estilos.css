@@ -8,6 +8,8 @@
     --gris-borde: #E2E8F0;
     --texto-oscuro: #2D3748;
     --blanco: #FFFFFF;
+    --verde-exito: #198754;
+    --rojo-error: #dc3545;
 }
 
 * {
@@ -18,6 +20,7 @@
 
 
 .texto-fecha {
+    text-align: left;
     color: var(--blanco);
     font-weight: 600;
 }
@@ -61,4 +64,82 @@
     color: var(--blanco);
     background-color: var(--guinda-oscuro);
     font-weight: 600;
+}
+
+/* Importamos la fuente 'Poppins' de Google Fonts para un aspecto moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+     --verde-exito: #198754;
+    --rojo-error: #dc3545;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-fondo);
+    color: var(--texto-oscuro);
+    /* Truco Flexbox para que el footer SIEMPRE quede hasta abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia el borde inferior de la pantalla */
+    animation: entradaSuave 0.6s ease-out;
+}
+
+/* Animacion de entrada para todas las paginas */
+@keyframes entradaSuave {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tarjetas interactivas que se elevan al pasar el cursor */
+.tarjeta-interactiva {
+    background-color: var(--blanco);
+    border-top: 4px solid var(--dorado);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-interactiva:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Boton institucional personalizado sobre Bootstrap */
+.btn-guinda {
+    background-color: var(--guinda);
+    color: var(--blanco);
+    border: 2px solid var(--guinda);
+    font-weight: 600;
+    transition: all 0.3s ease;
+} 
+
+.btn-guinda:hover {
+    background-color: var(--guinda-oscuro);
+    border-color: var(--dorado);
+    color: var(--dorado);
+    transform: translateY(-2px);
+}
+
+/* Estilo del Footer fijo al fondo */
+.pie-pagina {
+    background-color: var(--guinda-oscuro);
+    color: var(--blanco);
+    border-top: 4px solid var(--dorado);
+    padding: 20px 0;
+    margin-top: auto;
+    animation: entradaSuave 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.pie-pagina:hover {
+    background-color: var(--guinda);
+    transform: translateY(-1px);
+}
+
+.pie-pagina a{
+    color: var(--blanco);
 }
