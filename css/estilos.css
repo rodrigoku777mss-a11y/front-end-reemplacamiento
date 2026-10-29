@@ -201,6 +201,7 @@
     text-align: center;
 }
 
+
 .numero-paso {
     display: inline-block;
     width:40px;
@@ -292,6 +293,12 @@ main {
 .tarjeta-calculadora {
     border-top: 4px solid var(--guinda) !important;
 }
+
+.tarjeta-calculadora:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--carbon);
+}
+
 
 #resultado-cotizacion {
     border-left: 4px solid var(--dorado) !important;
