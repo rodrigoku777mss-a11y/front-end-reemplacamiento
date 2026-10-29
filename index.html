@@ -15,10 +15,16 @@
 
     <header class="encabezado-sitio">
 
+        <div class="barra-superior">
+            <div class="contenedor-barra">
+                <span> Gobierno del estado de Yucatan</span>
+                <span id="fecha-actual" class="texto-fecha"></span>
+            </div>
+        </div>
+
         <nav class="menu-navegacion">
             <div class="contenedor-nav">
-                <span id="fecha-actual" class="texto-fecha"></span>
-                <a href="index.html" class="logo-sitio">Reemplacamiento Yucatán 2026</a>
+                <p class="logo-sitio">Reemplacamiento Vehicular 2026</p>
                 <ul class="lista-navegacion">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="tramites.html">Trámites y Citas</a></li>
@@ -27,41 +33,57 @@
             </div>
         </nav>
     </header>
-
     <main class="container my-5">
-      
-        <div class="row g-4 align-items-center">
+        <section class="seccion-hero">
+            <div class="contenedor-hero">
+                <div class="tarjeta-logo-main">
+                    <img src="img/renacimiento.png" alt="imagen-logo" class="logo-main">
+                </div>
 
-            <!-- Columna de bienvenida -->
-            <div class="col-md-6">
-                <h1 class="fw-bold" style="color: var(--guinda);">Trámite de Reemplacamiento Yucatán 2026</h1>
-                <p class="lead">Mantén tu vehiculo al día de forma rápida, segura y con descuentos vigentes.</p>
-                <a href="tramites.html" class="btn btn-guinda px-4 py-2 mt-2">Agendar Cita Ahora</a>
+                <h1>Tramite de Reemplacamiento Vehicular</h1>
+                <p>
+                    Calcula el costo de tu trámite, consulta tus adeudos y agenda tu cita para renovar las placas de tu vehículo en Yucatán.
+                </p>
+                <div class="grupo-botones">
+                    <a href="calculadora.html" class="boton boton-principal">Calcular Costo</a>
+                    <a href="tramites.html" class="boton boton-secundario">Agendar Cita</a>
+                </div>
+
             </div>
+        </section>
 
-            <!-- Columna con Calculadora Rápida en Inicio (Usando Card del Framework) -->
-            <div class="col-md-6">
+        <section class="seccion-pasos">
+            <div class="contenedor-pasos">
+                <h2> Pasos para realizar tu tramite</h2>
+                <div class="grid-pasos">
 
-                <div class="card tarjeta-interactiva shadow-sm p-4">
-                    <h3 class="h5 fw-bold mb-3">Calculadora Rápida de Costos</h3>
-                    <label for="tipo-vehiculo">Selecciona tu tipo de vehiculo:</label>
-                    <select id="tipo-vehiculo" class="form-select mb-3">
-                        <option value="0">-- Elige una opción --</option>
-                        <option value="2150">Automóvil Particular </option>
-                        <option value="715">Motocicleta </option>
-                        <option value="3050">Camioneta de Carga </option>
-                    </select>
-                    <div class="alert alert-secondary mb-0">
-                        <strong>Total estimado: </strong> <span id="resultado-rapido">$0.00</span>
-                    </div>
+                    <article class="tarjeta-paso">
+                        <span class="numero-paso">1</span>
+                        <h3>Calcula tu costo</h3>
+                        <p>Obtén la cotización exacta según el tipo de tu vehículo y si tienes algun descuento.</p>
+                    </article>
+
+                    <article class="tarjeta-paso">
+                        <span class="numero-paso">2</span>
+                        <h3>Reune tus requisitos</h3>
+                        <p>Ten a la mano tu tarjeta de circulación, identificación oficial y placas </p>
+                    </article>
+
+                    <article class="tarjeta-paso">
+                        <span class="numero-paso">3</span>
+                        <h3>Agenda tu cita</h3>
+                        <p>Selecciona el módulo más cercano y acude en la fecha y hora indicadas.</p>
+                    </article>
+                    
                 </div>
             </div>
-        </div>
+        </section>
+      
         
     </main>
 
     <footer class="pie-pagina text-center">
-       <p class="mb-0">&copy; 2026 <a href="https://www.yucatan.gob.mx">Gobierno del Estado de Yucatán</a> - Portal de Reemplacamiento Vehicular</p>
+       <p class="mb-0"> <a href="https://www.yucatan.gob.mx">Gobierno del Estado de Yucatán</a> - Portal de Reemplacamiento Vehicular</p>
     </footer>
 
 </body>

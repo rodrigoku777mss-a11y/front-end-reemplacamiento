@@ -18,19 +18,17 @@
     padding: 0;
 }
 
-
-.texto-fecha {
-    text-align: left;
+.barra-superior {
+    background-color: #252525;
+    border-bottom: 2px solid var(--dorado);
+    padding: 8px 10px;
     color: var(--blanco);
+    font-size: 0.7rem;
     font-weight: 600;
+
 }
 
-.menu-navegacion {
-    background-color: var(--guinda);
-    padding: 14px 16px;
-}
-
-.contenedor-nav {
+.contenedor-barra {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -38,24 +36,46 @@
     align-items: center;
 }
 
+.texto-fecha {
+    text-align: left;
+    color: var(--blanco);
+}
+
+.menu-navegacion {
+    background-color: var(--guinda);
+    padding: 14px 16px;
+    align-items: center;
+}
+
+.contenedor-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo-sitio {
     color: var(--blanco);
     font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
+    align-items: center;
 }
 
 .lista-navegacion {
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: 1.25rem;
+    align-items: center;
+    font-weight: 600;
 }
 
 .lista-navegacion a {
     color: var(--blanco);
     text-decoration: none;
     font-size: 0.95rem;
-    padding: 6px 12px;
+    padding: 10px 12px;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -66,13 +86,148 @@
     font-weight: 600;
 }
 
+.seccion-hero {
+    background-color: var(--guinda);
+    border-bottom: 4px solid var(--dorado);
+    color: var(--blanco);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--carbon);
+}
+
+.contenedor-hero {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tarjeta-logo-main {
+    background-color: var(--blanco);
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.logo-main {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.seccion-hero h1 {
+    font-size: 2.25rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.seccion-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 28px;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: center;
+    gap:16px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.boton-principal {
+    background-color: var(--dorado-oscuro);
+    color: var(--blanco);
+}
+
+.boton-principal:hover {
+    background-color: var(--blanco);
+    color: var(--dorado);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.boton-secundario {
+    background-color: var(--guinda-oscuro);
+    color: var(--blanco);
+}
+
+.boton-secundario:hover {
+    background-color: var(--blanco);
+    color: var(--guinda);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.seccion-pasos {
+    padding: 60px 20px;
+}
+
+.contenedor-pasos {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.seccion-pasos h2 {
+    text-align: center;
+    color: var(--guinda);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.grid-pasos {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.tarjeta-paso {
+    background-color: rgb(255, 255, 254);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.numero-paso {
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--guinda);
+    color: var(--blanco);
+    font-weight: 700;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.tarjeta-paso h3 {
+   font-size:1.2rem;
+   margin-bottom: 12px;
+   color: var(--carbon);
+   font-weight: 600;
+}
+
+.tarjeta-paso p {
+   font-size: 0.95rem;
+   color: var(--texto-oscuro);
+}
+
+
+
+
+
+
 /* Importamos la fuente 'Poppins' de Google Fonts para un aspecto moderno */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-:root{
-     --verde-exito: #198754;
-    --rojo-error: #dc3545;
-}
+
 
 body {
     font-family: 'Poppins', sans-serif;
