@@ -19,13 +19,12 @@
 }
 
 .barra-superior {
-    background-color: #252525;
-    border-bottom: 2px solid var(--dorado);
-    padding: 8px 10px;
+    background-color: var(--guinda-oscuro);
+    padding: 4px;
     color: var(--blanco);
     font-size: 0.7rem;
     font-weight: 600;
-
+    box-shadow: 0 8px 24px var(--carbon);
 }
 
 .contenedor-barra {
@@ -34,6 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .texto-fecha {
@@ -45,18 +45,20 @@
     background-color: var(--guinda);
     padding: 14px 16px;
     align-items: center;
+    border-bottom: 4px solid var(--dorado);
+    align-items: center;
 }
 
 .contenedor-nav {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .logo-sitio {
     color: var(--blanco);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
     align-items: center;
@@ -81,8 +83,8 @@
 }
 
 .lista-navegacion a:hover {
-    color: var(--blanco);
-    background-color: var(--guinda-oscuro);
+    color: var(--guinda);
+    background-color: var(--blanco);
     font-weight: 600;
 }
 
@@ -221,9 +223,6 @@
 
 
 
-
-
-
 /* Importamos la fuente 'Poppins' de Google Fonts para un aspecto moderno */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -277,6 +276,21 @@ main {
     border-color: var(--dorado);
     color: var(--dorado);
     transform: translateY(-2px);
+}
+
+/* Calculadora */
+
+.seccion-calculadora {
+    background-color: var(--gris-fondo);
+    max-width: 750px;
+}
+
+.tarjeta-calculadora {
+    border-top: 4px solid var(--guinda) !important;
+}
+
+#resultado-cotizacion {
+    border-left: 4px solid var(--dorado) !important;
 }
 
 /* Estilo del Footer fijo al fondo */
